@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-from templateMatch import templateMatch
+import templateMatch
 
 def showImage(img):
     image = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
@@ -117,4 +117,5 @@ def filterColor():
 
 # filterColor()
 
-templateMatch()
+# templateMatch()
+templateMatch.featureMatch()
