@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import templateMatch
+from haarCascade import faceDetect
 
 def showImage(img):
     image = cv2.imread(img, cv2.IMREAD_GRAYSCALE)
@@ -118,4 +119,5 @@ def filterColor():
 # filterColor()
 
 # templateMatch()
-templateMatch.featureMatch()
+# templateMatch.featureMatch()
+faceDetect()
